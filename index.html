@@ -29,8 +29,39 @@
         </div>
 
         <div class="mainContent">
-          <div></div>
-          <div></div>
+          <div class="transactionContainer">
+            <h2>Transactions</h2>
+            <ul id="transactionList">
+              <!--  -->
+            </ul>
+          </div>
+          <div class="formContainer">
+            <h2>Add Transaction</h2>
+
+            <form id="transactionForm">
+              <div class="formGroup">
+                <label for="description">Description</label>
+                <input
+                  type="text"
+                  id="description"
+                  placeholder="Enter Desecription..."
+                  required
+                />
+              </div>
+              <div class="formGroup">
+                <label for="amount">Amount</label>
+                <input
+                  type="number"
+                  id="amount"
+                  placeholder="Enter Amount..."
+                  required
+                />
+                <small>Use minus sign (-) for expenses</small>
+              </div>
+
+              <button type="submit">Add Transactions</button>
+            </form>
+          </div>
         </div>
       </div>
     </main>
